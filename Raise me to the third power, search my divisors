@@ -1,0 +1,12 @@
+def printArray(array)
+output = ""
+array.each.with_index do |e,i| 
+		if e.is_a? Array
+		e.each.with_index {|e2,i2| i2 < e.length ? output << (e2.to_s + ",") : output << e2.to_s}
+		else
+		i < array.length - 1 ? output << (e.to_s + ",") : output << e.to_s
+		end
+	end
+output.gsub!(/\,$/,'')
+return output
+end

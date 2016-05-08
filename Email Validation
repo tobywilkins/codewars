@@ -1,0 +1,7 @@
+def validate(email)
+	if email.match (/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)
+	true
+ 	else
+ 	false
+ end
+end

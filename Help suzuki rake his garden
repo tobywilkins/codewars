@@ -1,0 +1,7 @@
+def rake_garden(garden)
+raked_garden = ""
+garden.split(' ').map {|word| (word == "gravel" || word == "rock") ? raked_garden << word + " " : raked_garden << "gravel " }
+return raked_garden.strip
+end
+
+print rake_garden("trees gravel rock spider moss gravel")

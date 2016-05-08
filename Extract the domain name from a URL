@@ -1,0 +1,7 @@
+  def domain_name(url)
+domain = url.scan (/(\w*\-?\w*).com/)
+output = domain.join('')
+end
+
+
+print domain_name"http://github.com"
